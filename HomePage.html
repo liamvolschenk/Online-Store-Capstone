@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mike's Bikes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS files/MikesBikesStyle.css">
+
+    <!-- link to bootstrap CDN, jQuery and CSS stylesheet -->
+
+</head>
+
+<body>
+
+
+    <header class="text-center">
+        <h1 style="padding-top: 20px; padding-bottom: 10px">MIKE'S BIKE SHOP</h1>
+    </header>
+
+    <nav style="padding-left: 100px; padding-right: 100px" class="navbar navbar-light bg-light">
+        <a class="navbar-brand" target="_blank" href="HomePage.html"> Home </a>
+        <a class="navbar-brand" target="_blank" href="ProductPage.html"> Products </a>
+        <a class="navbar-brand" target="_blank" href="AboutPage.html"> About Us </a>
+        <a class="navbar-brand" target="_blank" href="ContactPage.html"> Contact Us </a>
+        <div class="cart">
+            <a class="navbar-brand" target="_blank" href="Cart.html"> Cart </a><span>0</span>
+        </div>
+    </nav>
+
+    <!--A bootstrap navbar that is clickable with links that take you to the other pages on the site, and is universal across all pages -->
+
+    <div class="container">
+        <img style="filter: opacity(0.80);" id="mainImage" src="images/cyclist1.jpg" class="img-fluid" alt="Cyclist">
+        <div class="centered">
+            <h2>WE ARE HERE TO GET YOU OVER THAT NEXT MOUNTAIN</h2>
+            <h4>Join us</h4>
+        </div>
+    </div>
+
+    <!-- a large "welcoming image" with text placed over it. the image has an opacity filter applied. -->
+
+    <div class="colorAnimate">
+        <p class="text-center">Welcome to the largest bike store in the Southern Hemisphere, we pride ourselves in
+            providing you with the best experience possible with a smile on our faces. We would be nothing without the
+            world class brands that we stock, we pride ourselves in providing only the best qaulity bicycles, components
+            and accesories from the worlds leading bicycle brands.</p>
+    </div>
+
+    <!-- A button set up to hide/show the brands using a jQuery toggle function -->
+
+    <button type="submit" class="btn btn-outline-primary show-brands-cta">Hide Brands</button>
+
+    <div class="brands">
+        <h2 style="padding-top: 10px" class="text-center">OUR BRANDS</h2>
+
+        <div id="brandTable">
+            <table>
+                <tr scope="row">
+                    <td class="tableImages"><img src="images/cannondale.jpg" alt="Cannondale" class="img-fluid">
+                        <h3>CANNONDALE</h3>
+                    </td>
+                    <td class="tableImages"><img src="images/poc.jpg" alt="POC" class="img-fluid">
+                        <h3>POC</h3>
+                    </td>
+                    <td class="endImage"><img src="images/enve.jpg" alt="ENVE" class="img-fluid">
+                        <h3>ENVE</h3>
+                    </td>
+                </tr>
+
+                <tr scope="row">
+                    <td class="tableImages"><img src="images/oakley.jpg" alt="Oakley" class="img-fluid">
+                        <h3>OAKLEY</h3>
+                    </td>
+                    <td class="tableImages"><img src="images/specialized.jpg" alt="Specialized" class="img-fluid">
+                        <h3>SPECIALIZED</h3>
+                    </td>
+                    <td class="endImage"><img src="images/sram.jpg" alt="SRAM" class="img-fluid">
+                        <h3>SRAM</h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Above is a table that I have utilised to display and layout images -->
+
+    <div class="brand-categories">
+        <h2>Brand Categories</h2>
+        <p>Follow these links to see more from our brands:</p>
+
+        <!-- The following list has been linked to the JS file and Jquery function to animate it into an accordian
+         style drop down list when the main headings are hovered over. It has also been styled using CSS -->
+        <ul id="accordion">
+            <li>
+                <div>Bikes</div>
+                <ul>
+                    <li><a target="_blank" href="https://www.cannondale.com/en">Cannondale</a></li>
+                    <li><a target="_blank" href="https://www.specialized.com/us/en">Specialized</a></li>
+                </ul>
+            </li>
+            <li>
+                <div>Components</div>
+                <ul>
+                    <li><a target="_blank" href="https://www.sram.com/en/sram">SRAM</a></li>
+                    <li><a target="_blank" href="https://www.enve.com/en/">ENVE</a></li>
+                </ul>
+            </li>
+            <li>
+                <div>Apparel</div>
+                <ul>
+                    <li><a target="_blank" href="https://www.pocsports.com/">POC</a></li>
+                    <li><a target="_blank" href="https://www.oakley.com/en-eu">Oakley</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class=" col-sm-11 col-md-9 col-lg-8 col-xl-7">
+                <div class="card">
+                    <p style="padding: 0px;" class="post"> <span></span> <span class="post-txt">I have been a customer
+                            at Mike's Bike Shop for many years now and their
+                            service is the same as when I first started supporting them, world class! If you want the
+                            best service and the best deals, look no further!</span></p>
+                </div>
+                <div class="arrow-down"></div>
+                <div class="row d-flex justify-content-center">
+                    <div class=""> <img class="profile-pic fit-image" src=images/customer.jpg> </div> <p
+                            class="profile-name">Peter Sagan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- a customer testimonial making use of a bootstrap framework -->
+
+        <h2 style="padding-left: 15px; padding-top: 15px">Join our Mailing list:</h2>
+
+        <form style="padding-top: 20px; padding-bottom: 50px; padding-left: 15px">
+            <div class="form-group row">
+                <label for="inputName" class="col-sm-2 col-form-label">Name:</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="inputName" placeholder="Enter your name here">
+                </div>
+            </div>
+
+            <br>
+            <div class="form-group row">
+                <label for="inputEmail" class="col-sm-2 col-form-label">E-mail:</label>
+                <div class="col-sm-5">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter your E-mail here">
+                </div>
+            </div>
+            <br>
+            <div class="form-group row">
+                <div class="col-sm-10 offset-sm-2">
+                    <button type="submit" class="btn btn-outline-primary">Subscribe</button>
+                </div>
+            </div>
+        </form>
+
+
+        <!-- A simple form set up as a mailing list subscribtion -->
+
+        <hr>
+
+        <footer class="text-center">
+            <p> &copy; Mikes Bike Shop.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly created by LV Development
+            </p>
+            <p>Last updated: 11 February 2020</p>
+        </footer>
+
+        <!-- a footer that is also universal on all the pages -->
+
+        <script src="Javascript files/mikes-bikes-script.js"></script>
+        <!--link to javascript file-->
+
+</body>
+
+</html>

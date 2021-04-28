@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style type="text/css">
+        h1 {
+            font-family: arial;
+            color: #292929;
+        }
+
+        h2 {
+            font-family: verdana;
+            color: #646464;
+        }
+
+        img,
+        button {
+            padding: 5px;
+        }
+
+        img {
+            border-style: solid;
+            border-radius: 5px;
+        }
+
+        body {
+            background-color: #f0f0f0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .zoom {
+            transition: transform 0.2s;
+            margin: 0 auto;
+        }
+
+        .zoom:hover {
+            -ms-transform: scale(1.5);
+            -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+        }
+    </style>
+    <!-- I have used internal styling for this page to demonstrate the difference between external and internal css -->
+</head>
+
+<body>
+    <header class="text-center">
+        <h1 style="padding-top: 20px; padding-bottom: 10px">MIKE'S BIKE SHOP</h1>
+    </header>
+
+    <nav style="
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+      " class="navbar navbar-light bg-light">
+        <a class="navbar-brand" target="_blank" href="HomePage.html"> Home </a>
+        <a class="navbar-brand" target="_blank" href="ProductPage.html">
+            Products
+        </a>
+        <a class="navbar-brand" target="_blank" href="AboutPage.html">
+            About Us
+        </a>
+        <a class="navbar-brand" target="_blank" href="ContactPage.html">
+            Contact Us
+        </a>
+        <div class="cart">
+            <a class="navbar-brand" target="_blank" href="Cart.html"> Cart </a><span>0</span>
+        </div>
+    </nav>
+
+    <h2 style="padding-top: 20px; padding-bottom: 5px" class="text-center">
+        PRODUCTS
+    </h2>
+
+    <section class="row contain">
+        <article class="col-sm pb-2.4 image">
+            <div class="zoom">
+                <img src="images/bike1.jpg" class="img-thumbnail img-fluid" alt="Aethos" />
+            </div>
+            <h2 class="articleHeadings">Aethos</h2>
+            <p>Lighter than the clouds</p>
+            <p>R180 000</p>
+            <a target="_blank" href="Aethos-ProductPage.html" class="btn btn-outline-dark">More</a>
+            <!-- I have linked the above button so that it opens a new page which displays the produc in more detail -->
+            <a href="#" class="btn btn-outline-dark add-cart cart1">Add to Cart</a>
+        </article>
+        <article class="col-sm pb-2.4 image">
+            <div class="zoom">
+                <img src="images/bike2.jpg" class="img-thumbnail img-fluid" alt="Tarmac" />
+            </div>
+            <h2 class="articleHeadings">Tarmac</h2>
+            <p>The ride of your life</p>
+            <p>R100 000</p>
+            <a href="" class="btn btn-outline-dark">More</a>
+            <a href="#" class="btn btn-outline-dark add-cart cart2">Add to Cart</a>
+        </article>
+        <article class="col-sm pb-2.4 image">
+            <div class="zoom">
+                <img src="images/bike3.jpg" class="img-thumbnail img-fluid" alt="Tarmac Pro" />
+            </div>
+            <h2 class="articleHeadings">Tarmac SL7</h2>
+            <p>The bike to rule them all</p>
+            <p>R80 000</p>
+            <a href="" class="btn btn-outline-dark">More</a>
+            <a href="#" class="btn btn-outline-dark add-cart cart3">Add to Cart</a>
+        </article>
+        <article class="col-sm pb-2.4 image">
+            <div class="zoom">
+                <img src="images/bike4.jpg" class="img-thumbnail img-fluid" alt="Diverge" />
+            </div>
+            <h2 class="articleHeadings">Diverge</h2>
+            <p>The ultimate getaway vehicle</p>
+            <p>R70 000</p>
+            <a href="" class="btn btn-outline-dark">More</a>
+            <a href="#" class="btn btn-outline-dark add-cart cart4">Add to Cart</a>
+        </article>
+        <article class="col-sm pb-2.4 image">
+            <div class="zoom">
+                <img src="images/bike5.jpg" class="img-thumbnail img-fluid" alt="Diverge Comp" />
+            </div>
+            <h2 class="articleHeadings">Diverge Comp</h2>
+            <p>the power to ride anywhere</p>
+            <p>R50 000</p>
+            <a href="" class="btn btn-outline-dark">More</a>
+            <a href="#" class="btn btn-outline-dark add-cart cart5">Add to Cart</a>
+        </article>
+
+        <!-- the images in articles above have the animation effect applied where they zoom when hovered over, you can see the styling above -->
+    </section>
+    <br />
+    <section class="row">
+        <article class="col-sm pb-2.4 image">
+            <div class="zoom">
+                <img src="images/bike6.jpg" class="img-thumbnail img-fluid" alt="Allez Sprint" />
+            </div>
+            <h2 class="articleHeadings">Allez Sprint</h2>
+            <p>Anywhere & anytime</p>
+            <p>R30 000</p>
+            <a href="" class="btn btn-outline-dark">More</a>
+            <a href="#" class="btn btn-outline-dark add-cart cart6">Add to Cart</a>
+        </article>
+        <article class="col-sm pb-2.4 image">
+            <div class="zoom">
+                <img src="images/bike7.jpg" class="img-thumbnail img-fluid" alt="Roubaix" />
+            </div>
+            <h2 class="articleHeadings">Roubaix</h2>
+            <p>Smoother is faster</p>
+            <p>R80 000</p>
+            <a href="" class="btn btn-outline-dark">More</a>
+            <a href="#" class="btn btn-outline-dark add-cart cart7">Add to Cart</a>
+        </article>
+        <article class="col-sm pb-2.4 image">
+            <div class="zoom">
+                <img src="images/bike8.jpg" class="img-thumbnail img-fluid" alt="Epic Evo" />
+            </div>
+            <h2 class="articleHeadings">Epic Evo</h2>
+            <p>Simply fast</p>
+            <p>R100 000</p>
+            <a href="" class="btn btn-outline-dark">More</a>
+            <a href="#" class="btn btn-outline-dark add-cart cart8">Add to Cart</a>
+        </article>
+        <article class="col-sm pb-2.4 image">
+            <div class="zoom">
+                <img src="images/bike9.jpg" class="img-thumbnail img-fluid" alt="Chisel" />
+            </div>
+            <h2 class="articleHeadings">Chisel</h2>
+            <p>Shaped by racing</p>
+            <p>R45 000</p>
+            <a href="" class="btn btn-outline-dark">More</a>
+            <a href="#" class="btn btn-outline-dark add-cart cart9">Add to Cart</a>
+        </article>
+        <article class="col-sm pb-2.4 image">
+            <div class="zoom">
+                <img src="images/bike10.jpg" class="img-thumbnail img-fluid" alt="Rockhopper" />
+            </div>
+            <h2 class="articleHeadings">Rockhopper</h2>
+            <p>The mountain starts here</p>
+            <p>R23 000</p>
+            <a href="" class="btn btn-outline-dark">More</a>
+            <a href="#" class="btn btn-outline-dark add-cart cart10">Add to Cart</a>
+        </article>
+    </section>
+
+    <br />
+    <hr />
+
+    <footer class="text-center">
+        <p>
+            &copy; Mikes Bike Shop.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp;
+            Proudly created by LV Development
+        </p>
+        <p>Last updated: 11 February 2020</p>
+    </footer>
+
+    <script src="Javascript files/mikes-bikes-script.js"></script>
+</body>
+
+</html>

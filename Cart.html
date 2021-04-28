@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart</title>
+    <meta name="description" content="This is the description" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="CSS files/styles.css" />
+    <!-- links to various CDN's and stylesheets -->
+</head>
+
+<body>
+    <header class="text-center">
+        <h1 style="padding-top: 20px; padding-bottom: 10px">MIKE'S BIKE SHOP</h1>
+    </header>
+
+    <nav style="
+        padding-left: 100px;
+        padding-right: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+      " class="navbar navbar-light bg-light">
+        <a class="navbar-brand" target="_blank" href="HomePage.html"> Home </a>
+        <a class="navbar-brand" target="_blank" href="ProductPage.html">
+            Products
+        </a>
+        <a class="navbar-brand" target="_blank" href="AboutPage.html">
+            About Us
+        </a>
+        <a class="navbar-brand" target="_blank" href="ContactPage.html">
+            Contact Us
+        </a>
+        <div class="cart">
+            <a class="navbar-brand" target="_blank" href="Cart.html"> Cart </a><span>0</span>
+        </div>
+    </nav>
+
+    <h2 style="padding-top: 40px; text-decoration: underline" class="text-center">
+        CART
+    </h2>
+
+    <!-- a mostly empty div which is used to input the products and their properties from the JS file -->
+    <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+        </div>
+        <div class="products"></div>
+        <!-- the below divs house the promo, shipping and final values -->
+        <div class="summary-promo">
+            <div class="promo-title">Promotion:</div>
+            <div class="promo-value" id="basket-promo"></div>
+        </div>
+        <div class="summary-shipping summary-promo hide">
+            <div class="promo-title shipping-label">Shipping:</div>
+            <div class="shipping-value"></div>
+        </div>
+        <div class="summary-shipping summary-promo hide total-title">
+            <div class="total-label">Total:</div>
+            <div class="final-value"></div>
+        </div>
+        <div>
+            <button class="checkout-cta">Checkout</button>
+        </div>
+    </div>
+
+    <!-- the promo and shipping forms are below, the user must enter the promo and select a shipping method,
+         then click each button, then they must click the "submit" button to get the final value -->
+    <section class="promoContainer">
+        <div class="promotion">
+            <label class="promoContent" for="promo-code">Have A Promo Code?</label>
+            <input type="text" id="promo-code" placeholder="Enter Promo" />
+            <button class="promo-code-cta"></button>
+        </div>
+    </section>
+
+    <section class="shippingContainer">
+        <div class="shipping">
+            <label>Shipping Method</label>
+            <select id="shipping" type="text" placeholder="shipping">
+                <option value="select">--SELECT--</option>
+                <option value="shipping">Standard Shipping</option>
+                <option value="collection">Collection</option>
+            </select>
+            <button class="shipping-cta" type="button"></button>
+        </div>
+    </section>
+
+    <button class="submit-cta">Submit</button>
+
+    <br />
+    <hr />
+
+    <footer class="text-center footer">
+        <p>
+            &copy; Mikes Bike Shop.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp;
+            Proudly created by LV Development
+        </p>
+        <p>Last updated: 11 February 2020</p>
+    </footer>
+
+    <script src="Javascript files/mikes-bikes-script.js"></script>
+    <!-- link to JS script -->
+</body>
+
+</html>

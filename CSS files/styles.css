@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F0F0;
+    /* changing the background color of all the page backgrounds */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-family: arial;
+    color: #292929;
+}
+
+h3 {
+    font-family: verdana;
+    color: #646464;
+}
+
+h5 {
+    font-family: helvetica;
+    color: #7B7B7B;
+}
+
+.contain,
+.products-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.image {
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.products-container {
+    max-width: 850px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px;
+    padding-top: 50px;
+    background-color: #f8f9fa;
+    border-radius: 7px;
+}
+
+.products-container ion-icon {
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+}
+
+.price {
+    width: 15%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.quantities {
+    width: 30%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+}
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;
+    padding-right: 80px;
+}
+
+.product ion-icon {
+    cursor: pointer;
+}
+
+.products {
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 75px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotalTitle .vat {
+    display: inline-block;
+    font-size: 12px;
+}
+
+.card {
+    border: none;
+}
+
+.card-title p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.promotion,
+.shipping {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-left: 70px;
+}
+
+.promotion>label {
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-left: 20px;
+}
+
+.shipping>label {
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-left: 20px;
+}
+
+.promotion>input {
+    float: left;
+    font-size: 1rem;
+    padding: 0.5rem 0 0.5rem 1.8rem;
+    border: 2px solid #16cc9b;
+    border-radius: 2rem 0 0 2rem;
+}
+
+.shipping>select {
+    float: left;
+    font-size: 1rem;
+    padding: 0.73rem 0 0.5rem 1.8rem;
+    border: 2px solid #16cc9b;
+    border-radius: 2rem 0 0 2rem;
+    width: 200px;
+}
+
+.promotion:hover>input {
+    border-color: #f58551;
+}
+
+.shipping:hover>select {
+    border-color: #f58551;
+}
+
+.promotion>button {
+    float: left;
+    width: 100px;
+    height: 2.72rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+.shipping>button {
+    float: left;
+    width: 100px;
+    height: 2.72rem;
+    border-radius: 0 2rem 2rem 0;
+}
+
+.promotion:hover>button {
+    border-color: #f58551;
+    background-color: #f58551;
+}
+
+.shipping:hover>button {
+    border-color: #f58551;
+    background-color: #f58551;
+}
+
+.promotion>button::after {
+    content: "\276f";
+    font-size: 1rem;
+}
+
+.shipping>button::after {
+    content: "\276f";
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+a:hover {
+    color: #f58551;
+}
+
+button {
+    background-color: #16cc9b;
+    border: 2px solid #16cc9b;
+    color: #ffffff;
+    transition: all 0.25s linear;
+    cursor: pointer;
+}
+
+button::after {
+    position: relative;
+    right: 0;
+    content: " \276f";
+    transition: all 0.15s linear;
+}
+
+button:hover {
+    background-color: #f58551;
+    border-color: #f58551;
+}
+
+button:hover::after {
+    right: -5px;
+}
+
+button:focus {
+    outline: none;
+}
+
+input,
+select {
+    transition: all 0.25s linear;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+input,
+select {
+    outline: none;
+}
+
+.promoContainer,
+.shippingContainer {
+    width: 450px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: auto;
+    background-color: #f8f9fa;
+    border-radius: 7px;
+    float: left;
+    margin-left: 213px;
+    margin-bottom: 20px;
+
+}
+
+.summary-promo {
+    padding-right: 80px;
+    padding-left: 355px;
+}
+
+.total-title {
+    margin-left: 12px;
+    position: relative;
+    left: 92px;
+}
+
+.promo-value,
+.shipping-value,
+.final-value {
+    font-weight: bold;
+    position: relative;
+    left: 96px;
+    bottom: 23px;
+}
+
+.shipping-value {
+    position: relative;
+    left: 90px;
+}
+
+.final-value{
+    font-weight: 500;
+    font-size: 25px;
+    position: relative;
+    left: 107px;
+    bottom: 30px;
+}
+
+.shipping-label {
+    position: relative;
+    left: 5px;
+}
+
+.total-label {
+    position: relative;
+    left: 53px;
+}
+
+.promo-value:before,
+.shipping-value:before,
+.final-value:before {
+    content: 'R';
+}
+
+.promo-value:after,
+.shipping-value:after,
+.final-value:after {
+    content: '.00';
+}
+
+
+.submit-cta {
+    margin-top: 340px;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    padding: 7.3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    right: 185px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.checkout-cta {
+    border-radius: 35px;
+    padding: 7.3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+    position: relative;
+    right: 60px;
+}

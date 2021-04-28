@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS files/MikesBikesStyle.css">
+</head>
+
+<body>
+
+    <header class="text-center">
+        <h1 style="padding-top: 20px; padding-bottom: 10px">MIKE'S BIKE SHOP</h1>
+    </header>
+
+    <nav style="padding-left: 100px; padding-right: 100px" class="navbar navbar-light bg-light ">
+        <a class="navbar-brand" target="_blank" href="HomePage.html"> Home </a>
+        <a class="navbar-brand" target="_blank" href="ProductPage.html"> Products </a>
+        <a class="navbar-brand" target="_blank" href="AboutPage.html"> About Us </a>
+        <a class="navbar-brand" target="_blank" href="ContactPage.html"> Contact Us </a>
+        <div class="cart">
+            <a class="navbar-brand" target="_blank" href="Cart.html"> Cart </a><span>0</span>
+        </div>
+    </nav>
+
+    <h2 style="padding-top: 20px; padding-bottom: 5px" class="text-center">CONTACT US</h2>
+
+    <p class="text-center">If you have any questions, please call us at <a href="tel:+27218664599">021-866-4599</a> or
+        e-mail us at <a target="_blank" href="mailto:mike@bikes.com">mike@bikes.co.za</a> . We're ready to help.</p>
+
+    <!-- above are a few links, one which dials out to a phone number and another one to an email -->
+
+    <!-- below is a basic form acting as a contact form, it also contains a dropdown section to select a country -->
+
+    <form id="contactForm" action="action_page.php">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="Your e-mail..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">England</option>
+            <option value="usa">South Africa</option>
+            <option value="usa">USA</option>
+            <option value="usa">Zimbabwe</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h5 class="text-center">Store Hours</h5>
+
+    <ul style="list-style: none" class="text-center">
+        <li>Monday - Friday : 09:00 - 17:00</li>
+        <li>Saturday : 10:00 - 14:00</li>
+        <li>Sunday : CLOSED</li>
+    </ul>
+
+    <!-- a basic list that is customised by removing the bullet points, it is acting as the "store hours" -->
+
+    <p style="padding-left: 100px" class="text-center">Find us at 10 Bree Street, Cape Town, South Africa. Follow this
+        <a target="_blank" href="https://goo.gl/maps/jNMqib45SukGZw586">map</a></p>
+
+    <!-- another link which links to a map that is the supposed location of the physical store-->
+
+    <hr>
+
+    <footer class="text-center">
+        <p> &copy; Mikes Bike Shop.&nbsp;&nbsp; All Rights Reserved.&nbsp;&nbsp; Proudly created by LV Development</p>
+        <p>Last updated: 11 February 2020</p>
+    </footer>
+
+    <script src="Javascript files/mikes-bikes-script.js"></script>
+
+</body>
+
+</html>
